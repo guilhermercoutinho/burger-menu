@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #f29f05;
+  --btn-color: #401205;
+  --font-color: #fefefc;
+  --color-four: #d11508;
+}
+
+body {
+  background: var(--bg-color);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  gap: 40px;
+}
+
+button {
+  width: 8rem;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: var(--btn-color);
+  color: var(--font-color);
+  cursor: pointer;
+  font-weight: bold;
+
+  span {
+    font-size: 14px;
+    color: #d62400;
+  }
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 30px;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+  background-color: #f5ebdc;
+  color: #502314;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.menu-image {
+  width: 100%;
+  height: 184px;
+  border-radius: 5px;
+}
+
+p {
+  font-weight: bold;
+}
+
+.item-price {
+  color: var(--color-four);
+}
+
+@media screen and (max-width: 680px) {
+  ul {
+    grid-template-columns: 200px 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    gap: 0.5rem;
+  }
+
+  ul {
+    gap: 5px;
+    grid-template-columns: 180px 180px;
+    align-items: center;
+  }
+}
